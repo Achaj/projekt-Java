@@ -13,8 +13,6 @@ public class Budynek implements Powierzchnia{
 
     @Override
     public int policzPole() {
-
-        System.out.println("Pole, pole łyse pole");
         return 0;
        
     }
