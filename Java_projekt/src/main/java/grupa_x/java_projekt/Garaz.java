@@ -9,7 +9,7 @@ package grupa_x.java_projekt;
  *
  * @author Jan
  */
-public class Garaz extends Pomieszczenia {
+public class Garaz extends Pomieszczenie {
 
     int dlugoscBramy;
     int szerokoscBramy;
