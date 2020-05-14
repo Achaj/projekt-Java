@@ -1,6 +1,6 @@
 
-# Nazwa projektu
-# Laboratorium nr.3 (SztosProjekt)
+## Nazwa projektu
+ Laboratorium nr.3 (SztosProjekt)
 ## Opis
  Jest to aplikacja konsolowa demonstrująca użycie klas w programowaniu objektowym w języku Java
 ## Spis treści
