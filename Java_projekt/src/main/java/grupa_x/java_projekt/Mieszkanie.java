@@ -12,7 +12,7 @@ package grupa_x.java_projekt;
 public class Mieszkanie extends ElementPietra{
 
     String wizytowka;
-    Pomieszczenia[] pomieszczenia = new Pomieszczenia[2];
+    Pomieszczenie[] pomieszczenia = new Pomieszczenie[2];
 
     /*
        metoda zliczająca pole dwóch pomieszczeń
