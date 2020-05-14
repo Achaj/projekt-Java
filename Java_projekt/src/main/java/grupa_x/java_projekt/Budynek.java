@@ -16,6 +16,8 @@ public class Budynek implements Powierzchnia{
     private Pietro[] listaPieter;
     private Garaz garaz;
 
+
+    
     @Override
     public int policzPole() {
         return 0;
