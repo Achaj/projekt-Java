@@ -9,11 +9,11 @@ package grupa_x.java_projekt;
  *
  * @author Jan
  */
-public abstract class ElementPietra implements Powierzchnia{  
+public abstract class ElementPietra implements Powierzchnia {
 
     @Override
-    public int policzPole() {
-        return 0;
-    }
-    
+    public abstract int policzPole();
+
+    int numerPietra;
+
 }
