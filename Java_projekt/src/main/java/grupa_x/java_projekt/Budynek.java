@@ -11,6 +11,11 @@ package grupa_x.java_projekt;
  */
 public class Budynek implements Powierzchnia{
 
+    private int wynmiar;
+    private int iloscPieter;
+    private Pietro[] listaPieter;
+    private Garaz garaz;
+
     @Override
     public int policzPole() {
         return 0;
