@@ -11,15 +11,15 @@ package grupa_x.java_projekt;
  */
 public class main {
      public static void main(String[] args) {
-        Pomieszczenia[] mojePomieszczenia = {
-            new Pomieszczenia() {
+        Pomieszczenie[] mojePomieszczenia = {
+            new Pomieszczenie() {
                 {
                     szerokosc = 3;
                     dlugosc = 2;
                     nazwa = "pokoj";
                 }
             },
-            new Pomieszczenia() {
+            new Pomieszczenie() {
                 {
                     szerokosc = 2;
                     dlugosc = 2;
@@ -36,7 +36,7 @@ public class main {
             }
         };
         ElementPietra[] mojeElementyParteru = {
-            mojeMieszkanie, new Pomieszczenia() {
+            mojeMieszkanie, new Pomieszczenie() {
                 {
                     szerokosc = 2;
                     dlugosc = 2;

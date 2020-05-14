@@ -9,7 +9,7 @@ package grupa_x.java_projekt;
  *
  * @author Jan
  */
-public class Pomieszczenia extends ElementPietra {
+public class Pomieszczenie extends ElementPietra {
 
     int szerokosc;
     int dlugosc;
