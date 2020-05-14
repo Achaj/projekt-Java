@@ -70,6 +70,6 @@ public class main {
                 garaze = mojeGaraze;
             }
         };
-        System.out.println(mojBudynek.policzPole());
+        System.out.println(mojBudynek.policzPole());                //pole jest obliczane bez powierzchni dzialki
     }
 }
