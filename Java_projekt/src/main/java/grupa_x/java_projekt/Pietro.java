@@ -11,9 +11,17 @@ package grupa_x.java_projekt;
  */
 public class Pietro implements Powierzchnia {
 
+    int podajiloscPomieszczen;
+    ElementPietra[] elementy = new ElementPietra[2];
+    int numerPietra;
+
+     /*
+        metoda  zwraca polę powierzchni mieszkania i dodaje do nie jeszcze pomieszczeni suszarnia
+    */
+
     @Override
     public int policzPole() {
-      return 0;
+        return elementy[0].policzPole() + elementy[1].policzPole();
     }
     
 }
