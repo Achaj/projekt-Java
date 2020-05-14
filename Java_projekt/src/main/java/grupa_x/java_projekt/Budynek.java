@@ -11,17 +11,18 @@ package grupa_x.java_projekt;
  */
 public class Budynek implements Powierzchnia{
 
-    private int wynmiar;
-    private int iloscPieter;
-    private Pietro[] listaPieter;
-    private Garaz garaz;
+    int powierzchniaDzialki;
+    Pietro[] pietra = new Pietro[1];
+    Garaz[] garaze = new Garaz[1];
 
 
-    
+
+    /*
+        Zlicza pole garazu i pola piętra
+        POLE DZIAŁKI NIE JEST WLICZANE DO POLA POWIERZCHNI BUDYNKU
+    */
     @Override
     public int policzPole() {
-        return 0;
-       
+        return pietra[0].policzPole() + garaze[0].policzPole();
     }
-    
 }
