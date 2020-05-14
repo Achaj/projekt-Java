@@ -9,6 +9,17 @@ package grupa_x.java_projekt;
  *
  * @author Jan
  */
-public class Garaz extends Pomieszczenia{
-    
+public class Garaz extends Pomieszczenia {
+
+    int dlugoscBramy;
+    int szerokoscBramy;
+
+    /*
+        aby obliczyć pole garażu wywołujemy metode dziedzczoną nastenie od tej wartości odejmijemy pole bramy
+     */
+    @Override
+    public int policzPole() {
+        return super.policzPole() - (szerokoscBramy * dlugoscBramy);
+    }
+
 }
