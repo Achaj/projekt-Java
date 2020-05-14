@@ -9,6 +9,17 @@ package grupa_x.java_projekt;
  *
  * @author Jan
  */
-public class Pomieszczenia extends ElementPietra{
-    
+public class Pomieszczenia extends ElementPietra {
+
+    int szerokosc;
+    int dlugosc;
+    String nazwa;
+
+    /*
+        metoda zwraca pole powierzchni
+     */
+    @Override
+    public int policzPole() {
+        return dlugosc * szerokosc;
+    }
 }
