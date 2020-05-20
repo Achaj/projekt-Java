@@ -9,20 +9,26 @@ package grupa_x.java_projekt;
  *
  * @author Jan
  */
-public class Budynek implements Powierzchnia{
+public class Budynek implements Powierzchnia {
 
     int powierzchniaDzialki;
-    Pietro[] pietra = new Pietro[1];
-    Garaz[] garaze = new Garaz[1];
-
-
+    Pietro[] pietra;
+    Garaz[] garaze;
 
     /*
         Zlicza pole garazu i pola piętra
         POLE DZIAŁKI NIE JEST WLICZANE DO POLA POWIERZCHNI BUDYNKU
-    */
+     */
     @Override
     public int policzPole() {
-        return pietra[0].policzPole() + garaze[0].policzPole();
+        int polePietra = 0;
+        int poleGarazu = 0;
+        for (Pietro pietra1 : pietra) {
+            polePietra = polePietra + pietra1.policzPole();
+        }
+        for (Garaz garaze1 : garaze) {
+            poleGarazu = poleGarazu + garaze1.policzPole();
+        }
+        return poleGarazu + polePietra;
     }
 }

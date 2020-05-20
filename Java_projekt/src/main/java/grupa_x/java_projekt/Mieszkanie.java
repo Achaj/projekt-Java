@@ -12,14 +12,18 @@ package grupa_x.java_projekt;
 public class Mieszkanie extends ElementPietra{
 
     String wizytowka;
-    Pomieszczenie[] pomieszczenia = new Pomieszczenie[2];
+    Pomieszczenie[] pomieszczenia;
 
     /*
        metoda zliczająca pole dwóch pomieszczeń
    */
     @Override
     public int policzPole() {
-        return pomieszczenia[0].policzPole() + pomieszczenia[1].policzPole();
+        int polePowierzchniMieszkania=0;
+        for (Pomieszczenie pomieszczenia1 : pomieszczenia) {
+            polePowierzchniMieszkania = polePowierzchniMieszkania + pomieszczenia1.policzPole();
+        }
+        return polePowierzchniMieszkania;
     }
 
 

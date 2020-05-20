@@ -12,7 +12,7 @@ package grupa_x.java_projekt;
 public class Pietro implements Powierzchnia {
 
     int podajiloscPomieszczen;
-    ElementPietra[] elementy = new ElementPietra[2];
+    ElementPietra[] elementy;
     int numerPietra;
 
      /*
@@ -21,7 +21,11 @@ public class Pietro implements Powierzchnia {
 
     @Override
     public int policzPole() {
-        return elementy[0].policzPole() + elementy[1].policzPole();
+        int polePowierzchniElementowPietra=0;
+        for (ElementPietra elementy1 : elementy) {
+            polePowierzchniElementowPietra = polePowierzchniElementowPietra + elementy1.policzPole();
+        }
+        return polePowierzchniElementowPietra;
     }
     
 }
